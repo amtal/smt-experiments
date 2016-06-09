@@ -5,6 +5,8 @@ Fixed-cost problems like brute forcing CRCs, `srand(time(0))`, etc:
 * You don't need to limit yourself to Z3 if you use SMT-LIB or a frontend like
   Haskell's sbv. But, Z3 is pretty good nowadays.
 * If you know a fast way to solve the problem, an SMT solution will be slower.
+* Corollary: optimizing a solver (by switching the problem representation to a
+  different logic, or hinting which tactics to use) may be a poor use of time.
 
 Some CTF challenges and optimization problems:
 
